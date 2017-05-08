@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 let isCollapsed = true;
-
+console.log('running')
 const setCollapsed = () => {
 	if (isCollapsed) {
 		$(".goals-content").addClass("is-collapsed");
@@ -17,6 +17,7 @@ const loadDropDown = () => {
 		setCollapsed();
 
         $(".view-more").click(() => {
+			console.log('clicked')
 			isCollapsed = !isCollapsed;
 
 			setCollapsed();
